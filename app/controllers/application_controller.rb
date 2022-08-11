@@ -20,21 +20,14 @@ class ApplicationController < Sinatra::Base
     companies = Company.all
     companies.to_json
   end
-
+  
   # Add New Pattern
   post '/patterns' do
-    console.log(params[:notions])
-    pattern = Pattern.create(
-      company_id: params[:company_id], 
-      category_id: params[:category_id],
-      pattern_code: params[:pattern_code],
-      notions: params[:notions],
-      size: params[:size],
-      yardage: params[:yardage].to_i,
-      fabrics: params[:fabrics],
-      extras: params[:extras],
-      image: params[:notions]
-    )
+    # console.log(params[:notions])
+    binding.pry
+    # If params have all keys pass in (params) then use .each
+    pattern = Pattern.create(params)
+    pattern.to_json
   end
 
   patch '/patterns/:id' do

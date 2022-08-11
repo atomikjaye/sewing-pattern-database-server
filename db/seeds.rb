@@ -22,8 +22,8 @@ Category.create(name: "Toys")
 puts "🌱 Seeding Patterns..."
 # Seed your database here
 # Pattern.create(
-#   company_id: 0, 
-#   category_id: 0,
+  # company_id: 0, 
+  # category_ida: 0,
 #   pattern_code: "",
 #   notions: [""],
 #   size: "",
@@ -35,7 +35,7 @@ puts "🌱 Seeding Patterns..."
 
 
 Pattern.create(
-  company_id: 2, 
+  # company_id: 2, 
   category_id: 4,
   pattern_code: "S8561",
   notions: ["1/2\" elastic (1.5yd)",],
@@ -48,9 +48,9 @@ Pattern.create(
 
   
 Pattern.create(
-  company_id: 2, 
+  # company_id: 2, 
   category_id: 4,
-  pattern_code: "S8561",
+  pattern_code: "S9590",
   notions: ["(2) 1.5in Overall Buckles", "(4) 5/8in Buttons"],
   size: "XS - XL",
   yardage: 4,
@@ -60,7 +60,7 @@ Pattern.create(
   )
 
   Pattern.create(
-  company_id: 4, 
+  # company_id: 4, 
   category_id: 1,
   pattern_code: "B6871",
   notions: ["(1) 22\" (56 cm) invisible zipper", "(6) 1\" (2.5 cm) buttons"],
@@ -73,7 +73,7 @@ Pattern.create(
 
   
   Pattern.create(
-  company_id: 4, 
+  # company_id: 4, 
   category_id: 6,
   pattern_code: "B6863",
   notions: ["A, B: 2 yds (1.9 m) of 1/2\" (1.3 cm) Cord, Twill or Ribbon", "1/2 yd. (0.5 m) of 1/2\" (1.3 cm) Twill Tape or Ribbon", "A: One 26\" (66 cm) Separating Zipper.", "B: One 24\" (61 cm) Dual Separating Zipper"],
@@ -85,7 +85,7 @@ Pattern.create(
   )
 
   Pattern.create(
-    company_id: 3, 
+    # company_id: 3, 
     category_id: 7,
     pattern_code: "V1801",
     notions: ["One 22\" (56 cm) Invisible Zipper"],
@@ -97,7 +97,7 @@ Pattern.create(
     )
 
     Pattern.create(
-      company_id: 3, 
+      # company_id: 3, 
       category_id: 4,
       pattern_code: "V1894",
       notions: ["Swimwear Elastic: 3 yds for A; 1-3/4 yds.for B"],
