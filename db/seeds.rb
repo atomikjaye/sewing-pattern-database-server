@@ -21,17 +21,17 @@ Category.create(name: "Toys")
 
 puts "🌱 Seeding Patterns..."
 # Seed your database here
-Pattern.create(
-  company_id: 0, 
-  category_id: 0,
-  pattern_code: "",
-  notions: [""],
-  size: "",
-  yardage: 0,
-  fabrics: [""],
-  extras: "",
-  image: ""
-  )
+# Pattern.create(
+#   company_id: 0, 
+#   category_id: 0,
+#   pattern_code: "",
+#   notions: [""],
+#   size: "",
+#   yardage: 0,
+#   fabrics: [""],
+#   extras: "",
+#   image: ""
+#   )
 
 
 Pattern.create(
