@@ -10,11 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_11_174323) do
+ActiveRecord::Schema.define(version: 2022_08_12_031117) do
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
-    t.integer "company_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -26,13 +25,28 @@ ActiveRecord::Schema.define(version: 2022_08_11_174323) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "patterns", force: :cascade do |t|
+  create_table "fabrics", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "pattern_categories", force: :cascade do |t|
+    t.integer "pattern_id"
     t.integer "category_id"
+  end
+
+  create_table "pattern_fabrics", force: :cascade do |t|
+    t.integer "pattern_id"
+    t.integer "fabric_id"
+  end
+
+  create_table "patterns", force: :cascade do |t|
+    t.integer "company_id"
     t.string "pattern_code"
     t.string "notions"
     t.string "size"
     t.integer "yardage"
-    t.string "fabrics"
     t.string "extras"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
