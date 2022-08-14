@@ -1,3 +1,5 @@
+# require 'imagekitio'
+
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
@@ -69,4 +71,10 @@ class ApplicationController < Sinatra::Base
     pat_cat.destroy
     pattern.to_json
   end
+
+
+  # # IMAGE STUFFF
+  # get '/auth' do
+
+  # end 
 end
