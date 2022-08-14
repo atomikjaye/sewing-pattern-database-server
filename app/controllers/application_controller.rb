@@ -69,5 +69,4 @@ class ApplicationController < Sinatra::Base
     pat_cat.destroy
     pattern.to_json
   end
-
 end
