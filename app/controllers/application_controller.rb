@@ -18,7 +18,19 @@ class ApplicationController < Sinatra::Base
   
   get "/companies" do
     companies = Company.all
-    companies.to_json
+    companies.to_json(include: {patterns: { include: :categories} })
+  end
+
+  get "/companies/:id" do
+    company = Company.find(params[:id])
+    # company.to_json(include: :patterns)
+    company.to_json(include: {patterns: { include: [:categories, :fabrics] }} )
+  end
+
+  get "/patterns/:id" do
+    pattern = Pattern.find(params[:id])
+    # pattern.to_json
+    pattern.to_json(include: [:categories, :fabrics])
   end
 
   get "/fabrics" do
