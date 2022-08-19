@@ -38,12 +38,12 @@ class ApplicationController < Sinatra::Base
     fabrics.to_json
   end
 
-  post "/patterns_fabrics" do
+  post "/patterns/fabrics" do
     pat_fab = PatternFabric.create(params)
     pat_fab.to_json
   end
 
-  post "/patterns_categories" do
+  post "/patterns/categories" do
     pat_cat = PatternCategory.create(params)
     pat_cat.to_json
   end
