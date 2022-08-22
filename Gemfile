@@ -52,3 +52,6 @@ group :test do
 end
 
 gem 'activerecord-reset-pk-sequence'
+
+# ENV API Variables
+gem 'figaro'

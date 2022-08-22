@@ -16,3 +16,6 @@
 
 # Canvas-specific .results.json
 .results.json
+
+# Ignore application configuration
+/config/application.yml
