@@ -23,7 +23,7 @@ Category.create(name: "Dresses")
 Category.create(name: "Tops & Vests")
 Category.create(name: "Skirts, Pants, & Jumpsuits")
 Category.create(name: "Activewear & Swimsuits ")
-Category.create(name: "Sportswer & Coordinates")
+Category.create(name: "Sportswear & Coordinates")
 Category.create(name: "Jackets & Coats")
 Category.create(name: "Special Occasion")
 Category.create(name: "Lingerie")
@@ -79,18 +79,18 @@ puts "🌱 Seeding Patterns..."
 #   yardage: 0,
 #   fabrics: [""],
 #   extras: "",
-#   image: ""
+#   ismage: ""
 #   )
 
 
 simp1 = Pattern.create(
   company_id: 2, 
   pattern_code: "S8561",
-  notions: ["1/2\" elastic (1.5yd)",],
+  notions: "1/2\" elastic (1.5yd)",
   size: "1X - 5X",
   yardage: 0,
   extras: "These knit leggings are available in both Misses' sizes XS to XL and Plus sizes 1X to 5X. Special features include contrasting twisted tabs at ankle, stirrup detail, convenient side pockets, and super-flattering rear curved seam.",
-  image: "/images/S8561_envelope_front__14083.jpg"
+  image: "https://via.placeholder.com/200x280.png?text=Sewing+Pattern+Placeholder"
   )
   
   PatternCategory.create(pattern_id: simp1.id, category_id: 4)
@@ -102,11 +102,11 @@ simp1 = Pattern.create(
   simp2 = Pattern.create(
     company_id: 2, 
     pattern_code: "S9590",
-    notions: ["(2) 1.5in Overall Buckles", "(4) 5/8in Buttons"],
+    notions: "(2) 1.5in Overall Buckles, (4) 5/8in Buttons",
     size: "XS - XL",
     yardage: 4,
     extras: "Relaxed fit, straight leg overalls in ankle and cropped lengths have adjustable shoulder straps attaching to bib with overall buckles. Features bib and back patch pockets, front yoke and pockets, button closures and top stitched details",
-    image: "/images/S9590_envelope_front__28503.jpg"
+    image: "https://via.placeholder.com/200x280.png?text=Sewing+Pattern+Placeholder"
     )
     PatternCategory.create(pattern_id: simp2.id, category_id: 3)
     PatternCategory.create(pattern_id: simp2.id, category_id: 9)
@@ -118,11 +118,11 @@ simp1 = Pattern.create(
     butt1 = Pattern.create(
       company_id: 4, 
       pattern_code: "B6871",
-    notions: ["(1) 22\" (56 cm) invisible zipper", "(6) 1\" (2.5 cm) buttons"],
+    notions: "(1) 22\" (56 cm) invisible zipper, (6) 1\" (2.5 cm) buttons",
     size: "6-14",
     yardage: 2.75,
     extras: "High waist, princess seam dress has A-line shape, sleeve variations, decorative buttons and back invisible zipper. Views A and B have collar. Separate pattern pieces are included for cup sizes A/B, C, D. Complete the look with these silver shank buttons.",
-    image: "/images/B6871_envelope_front__59436.jpg"
+    image: "https://via.placeholder.com/200x280.png?text=Sewing+Pattern+Placeholder"
     )
     
     PatternCategory.create(pattern_id: butt1.id, category_id: 1)
@@ -135,11 +135,11 @@ simp1 = Pattern.create(
     butt2 = Pattern.create(
       company_id: 4, 
       pattern_code: "B6863",
-      notions: ["A, B: 2 yds (1.9 m) of 1/2\" (1.3 cm) Cord, Twill or Ribbon", "1/2 yd. (0.5 m) of 1/2\" (1.3 cm) Twill Tape or Ribbon", "A: One 26\" (66 cm) Separating Zipper.", "B: One 24\" (61 cm) Dual Separating Zipper"],
+      notions: "A, B: 2 yds (1.9 m) of 1/2\" (1.3 cm) Cord, Twill or Ribbon, 1/2 yd. (0.5 m) of 1/2\" (1.3 cm) Twill Tape or Ribbon, A: One 26\" (66 cm) Separating Zipper, B: One 24\" (61 cm) Dual Separating Zipper",
       size: "6-14",
   yardage: 2.75,
   extras: "Misses' zipper front jacket has front pockets and a hood.",
-  image: "/images/B6863_envelope_front__32413.jpg"
+  image: "https://via.placeholder.com/200x280.png?text=Sewing+Pattern+Placeholder"
   )
   PatternCategory.create(pattern_id: butt2.id, category_id: 6)
   PatternCategory.create(pattern_id: butt2.id, category_id: 9)
@@ -148,11 +148,11 @@ simp1 = Pattern.create(
   vog1 = Pattern.create(
     company_id: 3, 
     pattern_code: "V1801",
-    notions: ["One 22\" (56 cm) Invisible Zipper"],
+    notions: "One 22\" (56 cm) Invisible Zipper",
     size: "XL",
     yardage: 5.125,
     extras: "Misses' dress, very loose-fitting at bust, has deep V-neck, bodice pleats, raised waist, side front seams, side pockets, invisible back zipper & baby hems.",
-    image: "/images/V1801_envelope_front__91421.jpg"
+    image: "https://via.placeholder.com/200x280.png?text=Sewing+Pattern+Placeholder"
     )
     PatternCategory.create(pattern_id: vog1.id, category_id: 1)
     PatternCategory.create(pattern_id: vog1.id, category_id: 7)
@@ -162,11 +162,11 @@ simp1 = Pattern.create(
     vog2 = Pattern.create(
       company_id: 3, 
       pattern_code: "V1894",
-      notions: ["Swimwear Elastic: 3 yds for A", "1-3/4 yds.for B"],
+      notions: "Swimwear Elastic: 3 yds for A, 1-3/4 yds.for B",
       size: "XL",
       yardage: 1.5,
       extras: "Lined swimsuits have contrast narrow binding, ruching, front cutouts, and leg openings finished with elastic. View A is halter style and ties in back. View B has narrow straps.",
-      image: "V1894_envelope_front__43475.jpg"
+      image: "https://via.placeholder.com/200x280.png?text=Sewing+Pattern+Placeholder"
       )
       PatternCategory.create(pattern_id: vog2.id, category_id: 4)
       PatternCategory.create(pattern_id: vog2.id, category_id: 9)

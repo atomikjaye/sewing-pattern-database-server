@@ -2,7 +2,7 @@
 
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
-  
+  # Working on editting this controller
   # Add your routes here
   get "/" do
     { message: "Good luck with your project!" }.to_json
@@ -40,12 +40,12 @@ class ApplicationController < Sinatra::Base
     fabrics.to_json
   end
 
-  post "/patterns_fabrics" do
+  post "/patterns/fabrics" do
     pat_fab = PatternFabric.create(params)
     pat_fab.to_json
   end
 
-  post "/patterns_categories" do
+  post "/patterns/categories" do
     pat_cat = PatternCategory.create(params)
     pat_cat.to_json
   end
