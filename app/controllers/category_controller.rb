@@ -1,4 +1,4 @@
-class AssociationController < Sinatra::Base
+class CategoryController < Sinatra::Base
   
   #READ Pattern Categories
   get "/categories" do

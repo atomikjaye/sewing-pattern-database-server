@@ -13,3 +13,9 @@ use Rack::JSONBodyParser
 
 # Our application
 run ApplicationController
+use AssociationController
+use FabricController
+use CompanyController
+use CategoryController
+use PatternController
+
