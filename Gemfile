@@ -55,3 +55,4 @@ gem 'activerecord-reset-pk-sequence'
 
 # ENV API Variables
 gem 'figaro'
+gem 'imagekitio'

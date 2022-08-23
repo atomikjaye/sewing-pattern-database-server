@@ -1,9 +1,8 @@
-# require 'imagekitio'
-
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   # Working on editting this controller
   # Add your routes here
+
   get "/" do
     { message: "Good luck with your project!" }.to_json
   end
@@ -71,10 +70,4 @@ class ApplicationController < Sinatra::Base
     pat_cat.destroy
     pattern.to_json
   end
-
-
-  # # IMAGE STUFFF
-  # get '/auth' do
-
-  # end 
 end
